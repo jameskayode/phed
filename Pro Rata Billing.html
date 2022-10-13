@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> PHED Pro Rata Billing </title>
+	
+	
+	<link rel = "icon" href = "PHED Logo.png">
+	
+	<meta name="Pro Rata Billing" content="Customer Billing Information"/>
+	<meta http-equiv="Mostly numbers" content="text/html"; charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link href="css/forms.css" rel="stylesheet">
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/SDbg3ZyroCrcRZVQ/',
+       
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+	
+
+</head>
+	<body>
+		<div class="card">
+		
+			
+			<div class="banner">
+				<img src="PHED Banner.jpg" width="100%" height="144">
+			 <h1>Pro Rata Billing</h1> <br>
+			</div>
+			
+			
+	
+	
+	<div class="wrapper">
+		<form id="myForm">
+		
+		
+			<fieldset>
+				<div class="cust">
+			<legend>Customer Information</legend> 
+								
+						
+							<label> Account Number <input type="text" id="account_number" name="account number"></label>
+							<label for="date">Request  date<input type="date" id="name" name="date"></label>
+							<label for="region">Region <input type="text" id="region" name="region"></label>
+							<label for="primary feder">Primary Feeder <input id="primary feeder" name="primary feeder"></label>
+							<label for="secondary feeder">Secondary Feeder <input id="secondary feeder" name="secondary feeder"></label>
+							<label for="dtr">DTR: <input type="text" id="dtr" name="dtr"></label>	
+					
+							Load Reading(Amps) <input type="text" id="Load Reading(Amps)" name="Load Reading(Amps)">
+
+
+							<label for="building type"> Building type<select name="Building Type" id="Building Type"></label>
+									<option selected>Select Option</option>
+									<option>Batcher</option>
+									<option>Single Room</option>
+									<option>Self-Contained</option>
+									<option>One Bedroom Flat</option>
+									<option>Two Bedroom Flat</option>
+									<option>Three Bedroom Flat</option>
+									<option>Duplex- A</option>
+									<option>Duplex- B</option>
+									<option>Duplex- C</option>
+									
+								</select>
+							
+							
+						
+							
+							
+							</div>
+					</fieldset>
+				</div>
+
+					
+					<section>
+						<fieldset>
+						
+							<legend>Appliances</legend>
+								<select name="Appliances">
+									<option selected>Select Option</option>
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+								
+								<label for="Rating">Ratting (Watts)
+								<input type="text" id="Rating(Amps)" name="Rating(Amps)"></label>
+								<label for="Quantity">Quantity</label>
+								<input type="text" id="Quantity" name="Quantity">
+
+
+								<select name="Appliances-1">
+									<option selected>Select Option</option>
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+								
+								<label for="Rating">Ratting (Watts)
+								<input type="text" id="Rating(Amps)" name="Rating(Amps)-1"></label>
+								<label for="Quantity">Quantity
+								<input type="text" id="Quantity" name="Quantity-1"></label>
+							</fieldset>
+							</section>
+
+								<section>
+							<fieldset>
+						
+								<legend name="appp">Appliances</legend>
+							
+									<select name="Appliances-2">
+										<option selected>Select Option</option>
+										<option>Light Bulb</option>
+										<option>Television</option>
+										<option>Air Conditioner</option>
+										<option>Refrigerator</option>
+										<option>Ceiling Fan</option>
+										<option>Standing Fan</option>
+										<option>Hot Plate</option>
+										<option>Water Pump</option>
+										<option>Microwave</option>
+										<option>Electric Iron</option>
+										<option>Water Heater</option>
+										<option>Computer/Laptop</option>
+										<option>Mobile Phone</option>
+										<option>Decoder</option>
+										<option>DVD Player</option>
+										<option>Others</option>
+									</select>
+									
+									<label for="Rating">Ratting (Watts)
+									<input type="text" id="Rating(Amps)" name="Rating(Amps)-2"></label>
+									<label for="Quantity">Quantity</label>
+									<input type="text" id="Quantity" name="Quantity-2">
+	
+	
+									<select name="Appliances-3">
+										<option selected>Select Option</option>
+										<option>Light Bulb</option>
+										<option>Television</option>
+										<option>Air Conditioner</option>
+										<option>Refrigerator</option>
+										<option>Ceiling Fan</option>
+										<option>Standing Fan</option>
+										<option>Hot Plate</option>
+										<option>Water Pump</option>
+										<option>Microwave</option>
+										<option>Electric Iron</option>
+										<option>Water Heater</option>
+										<option>Computer/Laptop</option>
+										<option>Mobile Phone</option>
+										<option>Decoder</option>
+										<option>DVD Player</option>
+										<option>Others</option>
+									</select>
+									
+									<label for="Rating">Ratting (Watts)
+									<input type="text" id="Rating(Amps)" name="Rating(Amps)-3"></label>
+									<label for="Quantity">Quantity</label>
+									<input type="text" id="Quantity" name="Quantity-3">
+								</fieldset>
+							</section>
+							<section>
+								<fieldset>
+								
+									<legend>Appliances</legend>
+										<select name="Appliances-4">
+											<option selected>Select Option</option>
+											<option>Light Bulb</option>
+											<option>Television</option>
+											<option>Air Conditioner</option>
+											<option>Refrigerator</option>
+											<option>Ceiling Fan</option>
+											<option>Standing Fan</option>
+											<option>Hot Plate</option>
+											<option>Water Pump</option>
+											<option>Microwave</option>
+											<option>Electric Iron</option>
+											<option>Water Heater</option>
+											<option>Computer/Laptop</option>
+											<option>Mobile Phone</option>
+											<option>Decoder</option>
+											<option>DVD Player</option>
+											<option>Others</option>
+										</select>
+										
+										<label for="Rating">Ratting (Watts)
+										<input type="text" id="Rating(Amps)" name="Rating(Amps)-4"></label>
+										<label for="Quantity">Quantity</label>
+										<input type="text" id="Quantity" name="Quantity-4">
+		
+		
+										<select name="Appliances-5">
+											<option selected>Select Option</option>
+											<option>Light Bulb</option>
+											<option>Television</option>
+											<option>Air Conditioner</option>
+											<option>Refrigerator</option>
+											<option>Ceiling Fan</option>
+											<option>Standing Fan</option>
+											<option>Hot Plate</option>
+											<option>Water Pump</option>
+											<option>Microwave</option>
+											<option>Electric Iron</option>
+											<option>Water Heater</option>
+											<option>Computer/Laptop</option>
+											<option>Mobile Phone</option>
+											<option>Decoder</option>
+											<option>DVD Player</option>
+											<option>Others</option>
+										</select>
+										
+										<label for="Rating">Ratting (Watts)
+										<input type="text" id="Rating(Amps)" name="Rating(Amps)-5"></label>
+										<label for="Quantity">Quantity
+										<input type="text" id="Quantity" name="Quantity-5"></label>
+									</fieldset>
+									</section>
+									<section>
+										<fieldset>
+										
+											<legend>Appliances</legend>
+												<select name="Appliances-6">
+													<option selected>Select Option</option>
+													<option>Light Bulb</option>
+													<option>Television</option>
+													<option>Air Conditioner</option>
+													<option>Refrigerator</option>
+													<option>Ceiling Fan</option>
+													<option>Standing Fan</option>
+													<option>Hot Plate</option>
+													<option>Water Pump</option>
+													<option>Microwave</option>
+													<option>Electric Iron</option>
+													<option>Water Heater</option>
+													<option>Computer/Laptop</option>
+													<option>Mobile Phone</option>
+													<option>Decoder</option>
+													<option>DVD Player</option>
+													<option>Others</option>
+												</select>
+												
+												<label for="Rating">Ratting (Watts)
+												<input type="text" id="Rating(Amps)" name="Rating(Amps)-6"></label>
+												<label for="Quantity">Quantity</label>
+												<input type="text" id="Quantity" name="Quantity-6">
+				
+				
+												<select name="Appliances-7">
+													<option selected>Select Option</option>
+													<option>Light Bulb</option>
+													<option>Television</option>
+													<option>Air Conditioner</option>
+													<option>Refrigerator</option>
+													<option>Ceiling Fan</option>
+													<option>Standing Fan</option>
+													<option>Hot Plate</option>
+													<option>Water Pump</option>
+													<option>Microwave</option>
+													<option>Electric Iron</option>
+													<option>Water Heater</option>
+													<option>Computer/Laptop</option>
+													<option>Mobile Phone</option>
+													<option>Decoder</option>
+													<option>DVD Player</option>
+													<option>Others</option>
+												</select>
+												
+												<label for="Rating">Ratting (Watts)
+												<input type="text" id="Rating(Amps)" name="Rating(Amps)-7"></label>
+												<label for="Quantity">Quantity
+												<input type="text" id="Quantity" name="Quantity-7"></label>
+											</fieldset>
+											</section>
+											<section>
+												<fieldset>
+												
+													<legend>Appliances</legend>
+														<select name="Appliances-8">
+															<option selected>Select Option</option>
+															<option>Light Bulb</option>
+															<option>Television</option>
+															<option>Air Conditioner</option>
+															<option>Refrigerator</option>
+															<option>Ceiling Fan</option>
+															<option>Standing Fan</option>
+															<option>Hot Plate</option>
+															<option>Water Pump</option>
+															<option>Microwave</option>
+															<option>Electric Iron</option>
+															<option>Water Heater</option>
+															<option>Computer/Laptop</option>
+															<option>Mobile Phone</option>
+															<option>Decoder</option>
+															<option>DVD Player</option>
+															<option>Others</option>
+														</select>
+														
+														<label for="Rating">Ratting (Watts)
+														<input type="text" id="Rating(Amps)" name="Rating(Amps)-8"></label>
+														<label for="Quantity">Quantity</label>
+														<input type="text" id="Quantity" name="Quantity-8">
+						
+						
+														<select name="Appliances-9">
+															<option selected>Select Option</option>
+															<option>Light Bulb</option>
+															<option>Television</option>
+															<option>Air Conditioner</option>
+															<option>Refrigerator</option>
+															<option>Ceiling Fan</option>
+															<option>Standing Fan</option>
+															<option>Hot Plate</option>
+															<option>Water Pump</option>
+															<option>Microwave</option>
+															<option>Electric Iron</option>
+															<option>Water Heater</option>
+															<option>Computer/Laptop</option>
+															<option>Mobile Phone</option>
+															<option>Decoder</option>
+															<option>DVD Player</option>
+															<option>Others</option>
+														</select>
+														
+														<label for="Rating">Ratting (Watts)
+														<input type="text" id="Rating(Amps)" name="Rating(Amps)-9"></label>
+														<label for="Quantity">Quantity
+														<input type="text" id="Quantity" name="Quantity-9"></label>
+													</fieldset>
+													</section>
+													<section>
+														<fieldset>
+														
+															<legend>Appliances</legend>
+																<select name="Appliances-10">
+																	<option selected>Select Option</option>
+																	<option>Light Bulb</option>
+																	<option>Television</option>
+																	<option>Air Conditioner</option>
+																	<option>Refrigerator</option>
+																	<option>Ceiling Fan</option>
+																	<option>Standing Fan</option>
+																	<option>Hot Plate</option>
+																	<option>Water Pump</option>
+																	<option>Microwave</option>
+																	<option>Electric Iron</option>
+																	<option>Water Heater</option>
+																	<option>Computer/Laptop</option>
+																	<option>Mobile Phone</option>
+																	<option>Decoder</option>
+																	<option>DVD Player</option>
+																	<option>Others</option>
+																</select>
+																
+																<label for="Rating">Ratting (Watts)
+																<input type="text" id="Rating(Amps)" name="Rating(Amps)-10"></label>
+																<label for="Quantity">Quantity</label>
+																<input type="text" id="Quantity" name="Quantity-10">
+								
+								
+																<select name="Appliances-11">
+																	<option selected>Select Option</option>
+																	<option>Light Bulb</option>
+																	<option>Television</option>
+																	<option>Air Conditioner</option>
+																	<option>Refrigerator</option>
+																	<option>Ceiling Fan</option>
+																	<option>Standing Fan</option>
+																	<option>Hot Plate</option>
+																	<option>Water Pump</option>
+																	<option>Microwave</option>
+																	<option>Electric Iron</option>
+																	<option>Water Heater</option>
+																	<option>Computer/Laptop</option>
+																	<option>Mobile Phone</option>
+																	<option>Decoder</option>
+																	<option>DVD Player</option>
+																	<option>Others</option>
+																</select>
+																
+																<label for="Rating">Ratting (Watts)
+																<input type="text" id="Rating(Amps)" name="Rating(Amps)-11"></label>
+																<label for="Quantity">Quantity
+																<input type="text" id="Quantity" name="Quantity-11"></label>
+															</fieldset>
+															</section>
+															<section>
+																<fieldset>
+																
+																	<legend>Appliances</legend>
+																		<select name="Appliances-12">
+																			<option selected>Select Option</option>
+																			<option>Light Bulb</option>
+																			<option>Television</option>
+																			<option>Air Conditioner</option>
+																			<option>Refrigerator</option>
+																			<option>Ceiling Fan</option>
+																			<option>Standing Fan</option>
+																			<option>Hot Plate</option>
+																			<option>Water Pump</option>
+																			<option>Microwave</option>
+																			<option>Electric Iron</option>
+																			<option>Water Heater</option>
+																			<option>Computer/Laptop</option>
+																			<option>Mobile Phone</option>
+																			<option>Decoder</option>
+																			<option>DVD Player</option>
+																			<option>Others</option>
+																		</select>
+																		
+																		<label for="Rating">Ratting (Watts)
+																		<input type="text" id="Rating(Amps)" name="Rating(Amps)-12"></label>
+																		<label for="Quantity">Quantity</label>
+																		<input type="text" id="Quantity" name="Quantity-12">
+										
+										
+																		<select name="Appliances-13">
+																			<option selected>Select Option</option>
+																			<option>Light Bulb</option>
+																			<option>Television</option>
+																			<option>Air Conditioner</option>
+																			<option>Refrigerator</option>
+																			<option>Ceiling Fan</option>
+																			<option>Standing Fan</option>
+																			<option>Hot Plate</option>
+																			<option>Water Pump</option>
+																			<option>Microwave</option>
+																			<option>Electric Iron</option>
+																			<option>Water Heater</option>
+																			<option>Computer/Laptop</option>
+																			<option>Mobile Phone</option>
+																			<option>Decoder</option>
+																			<option>DVD Player</option>
+																			<option>Others</option>
+																		</select>
+																		
+																		<label for="Rating">Ratting (Watts)
+																		<input type="text" id="Rating(Amps)" name="Rating(Amps)-13"></label>
+																		<label for="Quantity">Quantity
+																		<input type="text" id="Quantity" name="Quantity-13"></label>
+																	</fieldset>
+																	</section>
+																	<section>
+																		<fieldset>
+																		
+																			<legend>Appliances</legend>
+																				<select name="Appliances-14">
+																					<option selected>Select Option</option>
+																					<option>Light Bulb</option>
+																					<option>Television</option>
+																					<option>Air Conditioner</option>
+																					<option>Refrigerator</option>
+																					<option>Ceiling Fan</option>
+																					<option>Standing Fan</option>
+																					<option>Hot Plate</option>
+																					<option>Water Pump</option>
+																					<option>Microwave</option>
+																					<option>Electric Iron</option>
+																					<option>Water Heater</option>
+																					<option>Computer/Laptop</option>
+																					<option>Mobile Phone</option>
+																					<option>Decoder</option>
+																					<option>DVD Player</option>
+																					<option>Others</option>
+																				</select>
+																				
+																				<label for="Rating">Ratting (Watts)
+																				<input type="text" id="Rating(Amps)" name="Rating(Amps)-14"></label>
+																				<label for="Quantity">Quantity</label>
+																				<input type="text" id="Quantity" name="Quantity-14">
+												
+												
+														
+																			</fieldset>
+																			</section>
+						
+							
+							<textarea id="comments" name="comments" placeholder="Comment or observations"></textarea>
+
+							<label>
+								
+								<input type="checkbox" id="mail list" name="mail list" checked>Information Verified
+							</label>
+
+				
+			</form>	
+		</div>
+			
+		</div>
+		
+	
+	</body>
+	
+	<button onclick="SubForm()">Submit Application</button>
+	
+</html>

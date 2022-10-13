@@ -1,0 +1,38 @@
+<button onclick="SubForm()">Submit INPUT</button>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/CjyWCVeWHBA5HJfM/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+<script>
+		const form = document.querySelector("#myForm")
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbxfBhkXnQS1AFTMkqoBsRS3t6ASXjWaDg38EQraowFjur2P9jhqULe86bDdxd2iiZDb/exec'
+	  
+		form.addEventListener('submit', e => {
+		  e.preventDefault()
+	  
+		  const responseBody = new FormData(form)
+		  const TrendBody = responseBody.getAll("TRENDS").join(" ")
+		  responseBody.set('TRENDS', TrendBody)
+		  fetch(scriptURL, { method: 'POST', body: responseBody })
+			.then(response => { alert('Success!', response) })
+			.catch(error => alert('Error!', error.message))
+		})
+	  </script>

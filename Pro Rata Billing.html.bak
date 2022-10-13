@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> PHED Pro Rata Billing </title>
+	<link rel = "icon" href = "PHED Logo.png">
+	<meta name="Pro Rata Billing" content="Customer Billing Information"/>
+	<meta http-equiv="Mostly numbers" content="text/html"; charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<style type="text/css">
+		Body {
+			color:black;
+			}
+	</style>
+
+</head>
+	<body>
+			<img src="PHED Banner.jpg" width="100%" height="144">
+			<font face="Comic Sans" color="black" size="30"> <strong>Pro Rata Billing</strong> </font><br>
+	</body>
+	<body>
+			<font face="Times New Roman" color="black" size="4">
+			Dummy website that collect dummy data from customers to enable pro rata billing.
+			</font>
+	</body>
+	<body>
+		<p>
+		<font face="Comic Sans" color="black" size="4">
+			Customer Information
+		</font>
+		</p>
+					<table width="70%" border="0" bordercolor="black" cellspacing="2" cellpadding="2">
+						<tr>
+							<td colspan="2">Customer Account Number <input type="text" id="ACC_NAME"></td>
+						<tr>
+							<td>Region: <input id="REGION"></td>
+							<td>Primary Feeder: <input id="PRI_FEEDER"></td>
+							<td>Secondary Feeder: <input id="SEC_FEEDER"></td>
+							<td>DTR: <input id="DTR_NAME"></td>
+						</tr>
+						<p></p>
+						<tr>
+							<td colspan="2">Load Reading(Amps): <input id="LOAD_READ"></td>
+						</tr>
+						<p></p>
+						<tr>
+							<td>Appliances</td>
+							<td>Rating(Watts)</td>
+							<td>Quantity</td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_1"/></td>
+							<td> <input id="QUANT_1"/></td>
+						</tr>
+												<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_2"/></td>
+							<td> <input id="QUANT_2"/></td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_3"/></td>
+							<td> <input id="QUANT_3">/</td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_4"/></td>
+							<td> <input id="QUANT_4"/></td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_5"/></td>
+							<td> <input id="QUANT_5"/></td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_6"/></td>
+							<td> <input id="QUANT_6"/></td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_7"/></td>
+							<td> <input id="QUANT_7"/></td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_8"/></td>
+							<td> <input id="QUANT_8"/></td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_9"/></td>
+							<td> <input id="QUANT_9"/></td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_10"/></td>
+							<td> <input id="QUANT_10"/></td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_11"/></td>
+							<td> <input id="QUANT_11"/></td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_12"/></td>
+							<td> <input id="QUANT_12"/></td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_13"/></td>
+							<td> <input id="QUANT_13"/></td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_14"/></td>
+							<td> <input id="QUANT_14"/></td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_15"/></td>
+							<td> <input id="QUANT_15"/></td>
+						</tr>
+						<tr border="2">
+							<td>
+								<select name="Appliances">
+									<option>Light Bulb</option>
+									<option>Television</option>
+									<option>Air Conditioner</option>
+									<option>Refrigerator</option>
+									<option>Ceiling Fan</option>
+									<option>Standing Fan</option>
+									<option>Hot Plate</option>
+									<option>Water Pump</option>
+									<option>Microwave</option>
+									<option>Electric Iron</option>
+									<option>Water Heater</option>
+									<option>Computer/Laptop</option>
+									<option>Mobile Phone</option>
+									<option>Decoder</option>
+									<option>DVD Player</option>
+									<option>Others</option>
+								</select>
+							</td>
+							<td> <input id="RAT_16"/></td>
+							<td> <input id="QUANT_16"/></td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td>
+								<input type="submit" name="submit" value="Submit"/>
+							</td>
+							<td>
+								<input type="reset" name="seset" value="Reset"/>
+							</td>
+						</tr>
+				</table>		
+	</body>
+</html>
