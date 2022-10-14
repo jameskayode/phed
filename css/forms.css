@@ -162,10 +162,14 @@ and (orientation: landscape) {
 /* For Mobile Phones Portrait or Landscape View */
 @media screen and (max-device-width: 640px) {
   .card {
-    width: 400px;
-    height: 200px;
-    background-color: chartreuse;
+    width: 500%;
+    height: 500%;
+    background-color: rgb(255, 0, 0);
     color: black;
+  }
+  .wrapper{
+   
+    font-display: column;
   }
 }
  
@@ -173,8 +177,7 @@ and (orientation: landscape) {
 @media screen and (min-device-width: 320px)
 and (-webkit-min-device-pixel-ratio: 2) {
   .card  {
-    width: 400%;
-    height: 400%;
+   
     background-color: rgb(0, 0, 0);
     color: black;
   }
