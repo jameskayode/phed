@@ -221,7 +221,7 @@ input{
   
  height: 40px;
   border: 1px solid black;
-  color: white;
+  background-color: #fff;
 }
 textarea{
   height: 6rem;
