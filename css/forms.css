@@ -181,9 +181,10 @@ and (orientation: landscape) {
   fieldset:cust{
     
    font-size: 36px;
+   
   }
   fieldset{
-    display: block;
+   
     width: 50%;
     font-size: 48px;
     border-radius: 5px;
@@ -191,7 +192,13 @@ and (orientation: landscape) {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    background-color: whitesmoke;
+    background-color: rgb(146, 102, 102);
+  }
+  .gridme{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    text-align: right;
   }
   legend{
     
@@ -232,6 +239,10 @@ textarea{
 
 .mobile{
 margin: 200px;
+font-size: 80px;
+text-align: center;
+align-content: center;
+
 
 
 }
