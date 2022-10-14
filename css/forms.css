@@ -162,21 +162,21 @@ and (orientation: landscape) {
 /* For Mobile Phones Portrait or Landscape View */
 @media screen and (max-device-width: 640px) {
   .card {
-    width: 500%;
-    height: 500%;
+    width: 1000%;
+    height: 800%;
    
     color: black;
     display: block;
   }
   .wrapper{
    
-   width: 25%;
+   width: 100%;
    
       padding: 1em;
       display: flex;
       text-align: center;
       justify-content: center;
-      background-color: gray;
+      background-image: url(../img/gg.jpg);
   }
   fieldset:cust{
     
@@ -185,7 +185,7 @@ and (orientation: landscape) {
   }
   fieldset{
    
-    width: 50%;
+    width: 100%;
     font-size: 48px;
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -221,7 +221,7 @@ option{
    
 input{
   
- height: 50px;
+ height: 100px;
  width: 400px;
   border: 3px solid black;
  font-weight: bold;
@@ -231,12 +231,15 @@ input{
 }
 textarea{
   height: 2.5rem;
-  width: 200px;
-  padding: 50px;
+  width: 400px;
+  padding: 60px;
   margin-left: 50px;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
+  font-weight: bold;
+  font-size: 28px;
+  color: black;
 
 }
 select{
@@ -244,6 +247,9 @@ select{
   font-weight: bold;
   text-align: center;
   justify-content: center;
+  border: 2px solid black;
+  width: 300px;
+  height:150px;
 }
 
 .mobile{
